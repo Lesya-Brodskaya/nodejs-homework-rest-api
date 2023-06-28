@@ -2,7 +2,7 @@ const express = require("express");
 
 const ctrl = require("../../controllers/contacts");
 
-const { validateBody } = require("../../middlewars");
+const { validateBody } = require("../../middlewares");
 
 const shemas = require("../../shemas/contacts");
 
