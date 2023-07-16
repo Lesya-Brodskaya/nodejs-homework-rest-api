@@ -1,5 +1,4 @@
 const express = require("express");
-// const { nanoid } = require("nanoid");
 
 const ctrl = require("../../controllers/contacts");
 
@@ -12,8 +11,6 @@ const router = express.Router();
 router.get("/", authenticate, ctrl.listContacts);
 
 router.get("/:contactId", authenticate, isValidId, ctrl.getContactById);
-
-// const contactsDir=path.join(_dirname, "public", "contacts")
 
 router.post(
   "/",
